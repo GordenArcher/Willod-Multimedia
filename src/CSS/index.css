@@ -58,11 +58,28 @@ header .page_header nav, .we_do_header{
 }
 
 .mobile_view{
-    display: none;
+    padding: 20px;
+    position: relative;
 }
 
-.nav_bar .nav_links, footer .nav_links{
-    position: relative;
+.mobile_view button{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    border: none;
+    background: #ccc;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.mobile_view button > div{
+    width: 80%;
+    height: 2px;
+    background: hsl(250, 100%, 16%);
 }
 
 .nav_bar .links ul, .footer_nav .links ul{
@@ -541,4 +558,169 @@ header .page_header nav, .we_do_header{
 
 #top i{
     font-size: 2.4rem;
+}
+
+@media screen and (max-width: 992px) {
+    .nav_links{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .nav_links ul{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .get_started{
+        display: none;
+    }
+
+    .mobile_view{
+        display: block;
+    }
+
+    .home_image{
+        margin-top: 50px;
+    }
+
+    .home_text{
+        margin-top: -40px;
+    }
+
+    .aswe h1{
+        font-size: 2rem;
+    }
+
+    .rewqq{
+        margin-top: -20px;
+    }
+
+    .grid_home, .we_do_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about_us{
+        margin-top: -50px;
+    }
+
+    .about_us_header h1{
+        font-size: 2rem;
+    }
+
+    .what_do, .quest_asked{
+        flex-direction: column;
+    }
+
+    .about_left_image{
+        width: 100%;
+        height: 500px;
+    }
+
+    .mann{
+        width: 100%;
+    }
+
+    .we_do_header, .faq_head{
+        font-size: 1rem;
+    }
+
+    .we_do_main_content{
+        margin-top: -30px;
+    }
+
+    .lft{
+        width: 100%;
+    }
+
+    .rggy{
+        display: none;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+    .nav_links{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .nav_links ul{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .get_started{
+        display: none;
+    }
+
+    .mobile_view{
+        display: block;
+    }
+
+    .home_image{
+        margin-top: -100px;
+    }
+
+    .home_text{
+        margin-top: -100px;
+    }
+
+    .aswe h1{
+        font-size: 2rem;
+    }
+
+    .rewqq{
+        margin-top: -20px;
+    }
+
+    .grid_home, .we_do_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about_us{
+        margin-top: -50px;
+    }
+
+    .about_us_header h1{
+        font-size: 1.6rem;
+    }
+
+    .what_do, .quest_asked{
+        flex-direction: column;
+    }
+
+    .about_left_image{
+        width: 100%;
+        height: 300px;
+    }
+
+    .view_works{
+        margin-top: -39px;
+    }
+
+    .faq{
+        padding: 20px;
+        margin-top: -40px;
+    }
+
+    .mann{
+        width: 100%;
+    }
+
+    .we_do_header, .faq_head{
+        font-size: .8rem;
+    }
+
+    .we_do_main_content{
+        margin-top: -30px;
+    }
+}
+
+@media screen and  (max-width: 424px) {
+    
 }
