@@ -60,6 +60,7 @@ header .page_header nav, .we_do_header{
 .mobile_view{
     padding: 20px;
     position: relative;
+    display: none;
 }
 
 .mobile_view button{
@@ -710,6 +711,7 @@ header .page_header nav, .we_do_header{
 
     .mann{
         width: 100%;
+        height: 400px;
     }
 
     .we_do_header, .faq_head{
