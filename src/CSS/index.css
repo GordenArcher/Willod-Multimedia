@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: rgb(14, 0, 84);
@@ -13,7 +17,9 @@ a{
 .header .page_header, .nav_bar, .home, .home_view, .home_image,
 .text_ankasa, .button_, .video_watch, .watch, .video, .rewqq, .col_home,
 .grid_home, .row_col, .about, .about_us, .about_us_main, .about____, .what_do,
-.written_about, .tab{
+.written_about, .we_do_main_content, .wrapper_pad, .we_do_grid, .what_we_do,
+.faq, .faq_wrapper, .quest_asked, .quest_ask_wap, .main_quest_ans, .faq_col,
+.footer, .footer_nav, .footer_icon{
     width: 100%;
     height: 100%;
 }
@@ -22,11 +28,11 @@ a{
     position: relative;
 }
 
-header .page_header nav{
+header .page_header nav, .we_do_header{
     padding: 10px;
 }
 
-.nav_bar{
+.nav_bar, .faq_quest, footer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,12 +47,12 @@ header .page_header nav{
     transition: .3s ease;
 }
 
-.nav_bar .logo{
+.nav_bar .logo, footer .logo{
     width: 100px;
     height: 100%;
 }
 
-.nav_bar .logo img{
+.nav_bar .logo img, footer .logo img{
     width: 100%;
     height: 100%;
 }
@@ -55,17 +61,17 @@ header .page_header nav{
     display: none;
 }
 
-.nav_bar .nav_links{
+.nav_bar .nav_links, footer .nav_links{
     position: relative;
 }
 
-.nav_bar .links ul{
+.nav_bar .links ul, .footer_nav .links ul{
     display: inline-flex;
     gap: 10px;
     list-style-type: none;
 }
 
-.nav_bar .links ul li{
+.nav_bar .links ul li, .footer_nav .links ul{
     position: relative;
     margin-left: 30px;
     font-size: 1.6rem;
@@ -75,7 +81,7 @@ header .page_header nav{
 
 }
 
-.nav_bar .links ul li::after {
+.nav_bar .links ul li::after{
     content: '';
     position: absolute;
     left: 0;
@@ -86,7 +92,7 @@ header .page_header nav{
     transition: width .4s ease; 
 }
 
-.nav_bar .links ul li:hover::after {
+.nav_bar .links ul li:hover::after{
     width: 130%; 
 }
 
@@ -169,7 +175,7 @@ header .page_header nav{
     font-size: 1.6rem;
 }
 
-.sh_video{
+.sh_video, .quest_asked{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -247,16 +253,16 @@ header .page_header nav{
     justify-content: center;
 }
 
-.rewqq{
+.rewqq, .action, .we_do_header, .faq{
     margin-top: 60px;
 }
 
-.col_home, .about_us{
+.col_home, .about_us, .wrapper_pad, .faq{
     padding: 30px;
     margin-bottom: 30px;
 }
 
-.grid_home{
+.grid_home, .we_do_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -283,12 +289,12 @@ header .page_header nav{
     font-weight: 800;
 }
 
-.row_col:hover{
+.row_col:hover,.service-box:hover{
     transform: translateY(-4px);
     box-shadow: 0 2px 21px #cccc;
 }
 
-.about_us_header{
+.about_us_header, .we_do_header{
     text-align: center;
 }
 
@@ -336,7 +342,7 @@ header .page_header nav{
     list-style: none;
 }
 
-.top_content{
+.top_content, .we_do_main_content, .view_works{
     margin-top: 30px;
 }
 
@@ -361,4 +367,178 @@ header .page_header nav{
     background-position: center;
     position: relative;
     background-attachment: fixed;
+}
+
+.we_do_header, .faq_head{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.service-box{
+    padding: 20px;
+    border-radius: 4px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: hsl(250, 100%, 16%); 
+    margin-bottom: 20px;
+}
+.service-box h4 {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.service-box p, .faq_head{
+    margin-top: 20px;
+}
+
+.view_works{
+    margin-bottom: 30px;
+}
+
+.view_more_works{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.view_more_works button{
+    width: 160px;
+    height: 50px;
+    border: none;
+    background: hsl(250, 100%, 16%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .3s ease;
+    font-size: 1rem;
+}
+
+.view_more_works button:hover{
+    transform: translateY(-4px);
+}
+
+.lft{
+    width: 80%;
+}
+
+.quest_ask_wap, .main_faq{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rggy{
+    width: 800px;
+    height: 100%;
+    position: relative;
+}
+
+.faq_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.faq_padd{
+    border-radius: 3px;
+    box-shadow: 0 0 20px #ccc;
+    margin: 10px;
+}
+
+.faq_padd{
+    padding: 20px;
+    transition: .4s ease;
+    height: 70px;
+    overflow: hidden;
+}
+
+.quest_icon{
+    color: hsl(250, 100%, 16%);
+    font-size: 1.3rem;
+    transition: .3s ease;
+}
+
+.faq_quest{
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.faq_quest:hover{
+    color: hsl(250, 100%, 16%);
+}
+
+.faq_answer{
+    margin-top: 40px;
+    transition: all .4s ease;
+}
+
+.faq_col{
+    transition: all .4s ease;
+}
+
+.full{
+    height: 100%;
+}
+
+.full i{
+    transition: .3s ease;
+    transform: rotate(45deg);
+}
+
+.faq_quest {
+    height: 30px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+.expanded {
+    height: 200px; 
+  }
+
+.answer{
+    color: hsl(250, 100%, 16%);
+    font-size: 1.1rem;
+}
+
+.rotated {
+    transform: rotate(90deg);
+  }
+  
+.footer{
+    background: hsl(250, 100%, 16%);
+}  
+
+.footer footer{
+    padding: 40px;
+}
+
+.footer_nav .links ul a{
+    color: hsl(0, 0%, 100%);
+}
+
+.footer_nav .links ul li{
+    padding-left: 30px;
+}
+
+.to_top{
+    position: fixed;
+    bottom: 10%;
+    right: 50px;
+    z-index: 99;
+    display: none;
+}
+
+#top{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+#top i{
+    font-size: 2.4rem;
 }
