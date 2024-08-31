@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="/src/CSS/about.css" />
+    <link rel="stylesheet" href="/src/CSS/work.css" />
     <link rel="stylesheet" href="/src/CSS/index.css" />
     <title>About || WILLOD MULTIMEDIA</title>
   </head>
@@ -45,7 +45,7 @@
                       <li>
                         <a href="/"> Home </a>
                       </li>
-                      <li><a href="/src/pages/about.html"> About </a></li>
+                      <li><a href="/#about"> About </a></li>
                       <li>
                         <a href="/src/pages/contact.html"> Contact </a>
                       </li>
@@ -55,7 +55,7 @@
 
                 <div class="get_started">
                   <div class="start">
-                    <a href="#about">
+                    <a href="/#about">
                       <button>Get Started</button>
                     </a>
                   </div>
@@ -64,6 +64,37 @@
             </nav>
           </div>
         </header>
+
+        <section style="margin-top: 60px; margin-bottom: 30px">
+          <div class="my_work">
+            <div class="my_work_grid">
+              <div class="image_">
+                <img src="/src/images/image5.jpeg" alt="my works" />
+              </div>
+              <div class="image_">
+                <img src="/src/images/image3.jpeg" alt="my works" />
+              </div>
+              <div class="image_">
+                <img src="/src/images/image2.jpeg" alt="my works" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="listen">
+          <div class="listen_video">
+            <button id="listen" > <i class="bi bi-ear"></i> Listen</button>
+          </div>
+
+          <div class="video_pop">
+            <div class="close_vidoe">
+              <button id="closeVid" ><i class="bi bi-x"></i></button>
+            </div>
+            <div class="see">
+              <video src="/src/videos/video1.mp4" width="80%" controls autoplay loop muted></video>
+            </div>
+          </div>
+        </div>
 
         <div class="footer">
           <footer>
@@ -98,5 +129,19 @@
     </div>
 
     <script src="/src/JS/main.js"></script>
+
+    <script>
+      const listenVid = document.querySelector(".video_pop");
+      const closeVideo = document.getElementById("closeVid");
+      const listen = document.getElementById("listen");
+
+      listen.addEventListener("click", () => {
+        listenVid.classList.add("show_vid");
+      });
+
+      closeVideo.addEventListener("click", () => {
+        listenVid.classList.add("close_vid");
+      });
+    </script>
   </body>
 </html>
