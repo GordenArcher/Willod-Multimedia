@@ -648,6 +648,10 @@ header .page_header nav, .we_do_header{
         width: 100%;
     }
 
+    .tswee{
+        display: none;
+    }
+
     .we_do_header, .faq_head{
         font-size: 1rem;
     }

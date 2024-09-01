@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="mobile_view">
-                  <button>
+                  <button id="mobile">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -135,20 +135,6 @@
       </div>
     </div>
 
-    <script src="/src/JS/main.js"></script>
-
-    <script>
-      const listenVid = document.querySelector(".video_pop");
-      const closeVideo = document.getElementById("closeVid");
-      const listen = document.getElementById("listen");
-
-      listen.addEventListener("click", () => {
-        listenVid.classList.add("show_vid");
-      });
-
-      closeVideo.addEventListener("click", () => {
-        listenVid.classList.remove("show_vid");
-      });
-    </script>
+    <script src="/src/JS/script.js"></script>
   </body>
 </html>
