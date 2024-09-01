@@ -1,10 +1,11 @@
-const mobile = document.querySelector(".mobile");
-const headerNav = document.querySelector(".myyh");
+const mobile = document.getElementById("mobile");
+const nav_links = document.querySelector(".nav_links");
 const video_watch = document.querySelector(".video_watch");
 const main_video = document.querySelector(".sh_video");
 const closeVid = document.querySelector(".close");
 const to_top = document.querySelector(".to_top");
 const to_topbut = document.querySelector("#top");
+const page_header = document.querySelector(".page_header");
 const moreWork = document.getElementById("view_wok");
 
 moreWork.addEventListener("click", () => {
@@ -14,11 +15,8 @@ moreWork.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 350) {
     to_top.style.display = "block";
-    to_topbut.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+    to_top.addEventListener("click", () => {
+      window.scrollTo((top = "0"), (behaviour = "smooth"));
     });
   } else {
     to_top.style.display = "none";
@@ -27,9 +25,9 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
-    headerNav.classList.add("heaaa");
+    page_header.classList.add("heaaa");
   } else {
-    headerNav.classList.remove("heaaa");
+    page_header.classList.remove("heaaa");
   }
 });
 
@@ -64,4 +62,8 @@ f2.addEventListener("click", () => {
 f3.addEventListener("click", () => {
   fq3.classList.toggle("expanded");
   questIcon3.classList.toggle("rotated");
+});
+
+mobile.addEventListener("click", () => {
+  nav_links.classList.toggle("moble_active");
 });

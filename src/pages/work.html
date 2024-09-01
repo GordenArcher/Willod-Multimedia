@@ -83,15 +83,22 @@
 
         <div class="listen">
           <div class="listen_video">
-            <button id="listen" > <i class="bi bi-ear"></i> Listen</button>
+            <button id="listen"><i class="bi bi-ear"></i> Listen</button>
           </div>
 
           <div class="video_pop">
             <div class="close_vidoe">
-              <button id="closeVid" ><i class="bi bi-x"></i></button>
+              <button id="closeVid"><i class="bi bi-x"></i></button>
             </div>
             <div class="see">
-              <video src="/src/videos/video1.mp4" width="80%" controls autoplay loop muted></video>
+              <video
+                src="/src/videos/video1.mp4"
+                width="80%"
+                controls
+                autoplay
+                loop
+                muted
+              ></video>
             </div>
           </div>
         </div>
@@ -140,7 +147,7 @@
       });
 
       closeVideo.addEventListener("click", () => {
-        listenVid.classList.add("close_vid");
+        listenVid.classList.remove("show_vid");
       });
     </script>
   </body>

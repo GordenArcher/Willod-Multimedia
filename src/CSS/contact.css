@@ -50,10 +50,6 @@ header .page_header nav{
     display: none;
 }
 
-.nav_bar .nav_links{
-    position: relative;
-}
-
 .nav_bar .links ul{
     display: inline-flex;
     gap: 10px;
@@ -199,4 +195,35 @@ textarea{
     font-size: 1.4rem;
     cursor: pointer;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .contact_main main{
+        padding: 30px;
+    }
+
+    .contact_right{
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and  (max-width: 768px) {
+    
+    .contact_main main{
+        padding: 20px;
+    }
+
+    .contact_container{
+        flex-direction: column;
+    }
+
+    .contact_left{
+        width: 100%;
+    }
+
+    textarea{
+        height: 200px;
+    }
 }

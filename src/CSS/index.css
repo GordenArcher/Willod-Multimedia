@@ -40,6 +40,13 @@ header .page_header nav, .we_do_header{
     gap: 20px;
 }
 
+.page_header{
+    transition: all .4s ease;
+    width: 100%;
+    z-index: 999;
+    background: #ffffff;
+}
+
 .heaaa{
     box-shadow: 0 0 2px #ccc;
     position: fixed;
@@ -566,13 +573,30 @@ header .page_header nav, .we_do_header{
         position: fixed;
         left: 0;
         top: 0;
-        display: none;
+        width: 50%;
+        height: 100vh;
+        background: hsl(250, 100%, 16%);
+        transition: all .4s ease;
+        transform: translateX(-100%);
+        z-index: 9999;
+    }
+
+    .moble_active{
+        transform: translateX(0);
     }
 
     .nav_links ul{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .nav_links ul li{
+        margin-top: 40px;
+    }
+
+    a{
+        color: #ffffff;
     }
 
     .get_started{
@@ -646,7 +670,6 @@ header .page_header nav, .we_do_header{
         position: fixed;
         left: 0;
         top: 0;
-        display: none;
     }
 
     .nav_links ul{

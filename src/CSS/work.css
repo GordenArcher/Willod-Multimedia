@@ -45,10 +45,6 @@ header .page_header nav{
     display: none;
 }
 
-.nav_bar .nav_links{
-    position: relative;
-}
-
 .nav_bar .links ul{
     display: inline-flex;
     gap: 10px;
